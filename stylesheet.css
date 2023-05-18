@@ -1,13 +1,275 @@
-h1{
-  color:aquamarine;  
-  background-color: rgb(0, 136, 255);  
+.page-title {
+  text-align: center;
+}
+/* Navbar styles */
+.nav-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+/* Heading styles */
+.main-heading {
+  font-size: 32px;
+  color: #333;
+  margin-top: 40px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.secondary-heading {
+  font-size: 18px;
+  color: #888;
+  margin-top: 10px;
+}
+.navbar a.nav-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --accent-color: #888;
+}
+
+/* Heading styles */
+.main-heading {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-top: 40px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+.secondary-heading {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-top: 10px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+}
+.search-bar {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#search-button {
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("background.jpg"); /* Replace "background.jpg" with your image file path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.image-container img {
+  width: 160px; /* Adjust the width as desired */
+  height: auto; /* Preserve the aspect ratio */
+}
+
+/* Animate the page title */
+.page-title {
+  text-align: center;
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate the navigation links */
+.nav-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(245, 2, 2);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+/* Animate the main heading */
+.main-heading {
+  font-size: 32px;
+  color: #333;
+  margin-top: 40px;
+  transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-heading:hover {
+  font-size: 36px;
+  color: #ff0000;
+}
+
+/* Animate the image on hover */
+.image-container img {
+  width: 500px; /* Adjust the width as desired */
+  height: auto; /* Preserve the aspect ratio */
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
 
-
-p{
-    color: blueviolet;
+.image-container img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
-body{
-    background-color: rgb(242, 255, 126);
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgb(233, 70, 70); /* Adjust the background color and opacity as needed */
+  color: #fff; /* Adjust the text color as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay p {
+  font-size: 18px; /* Adjust the font size as needed */
+  text-align: center;
+}
+#specific-image {
+  width: 150px; /* Set the desired width */
+  height: auto; /* Let the height adjust proportionally */
 }
