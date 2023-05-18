@@ -246,20 +246,6 @@ body {
   display: inline-block;
 }
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:100%;
-  background-color: rgb(233, 70, 70); /* Adjust the background color and opacity as needed */
-  color: #fff; /* Adjust the text color as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
 
 .image-container:hover .image-overlay {
   opacity: 1;
@@ -273,3 +259,4 @@ body {
   width: 150px; /* Set the desired width */
   height: auto; /* Let the height adjust proportionally */
 }
+
